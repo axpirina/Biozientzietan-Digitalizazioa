@@ -44,6 +44,12 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .image-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
         }
         .image-card img {
             width: 100%;
@@ -57,6 +63,64 @@
             font-size: 0.9em;
             color: #333;
         }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal.show {
+            display: flex;
+        }
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+        }
+        .modal-title {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 1.2em;
+            background: rgba(0,0,0,0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .modal-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+            padding: 20px;
+            user-select: none;
+        }
+        .modal-nav:hover {
+            color: #3498db;
+        }
+        .modal-prev {
+            left: 10px;
+        }
+        .modal-next {
+            right: 10px;
+        }
     </style>
 </head>
 <body>
@@ -65,27 +129,82 @@
         <a href="https://axpirina.github.io/Biozientzietan-Digitalizazioa/" class="back-link">← Itzuli Dashboard-era</a>
         
         <div class="gallery">
-            <div class="image-card">
+            <div class="image-card" onclick="openModal(0)">
                 <img src="Dashboard.png" alt="Dashboard">
                 <h3>Dashboard</h3>
             </div>
-            <div class="image-card">
+            <div class="image-card" onclick="openModal(1)">
                 <img src="Dht11.png" alt="DHT11 Modulua">
                 <h3>DHT11 Modulua</h3>
             </div>
-            <div class="image-card">
+            <div class="image-card" onclick="openModal(2)">
                 <img src="Nodemcu.png" alt="NodeMCU">
                 <h3>NodeMCU</h3>
             </div>
-            <div class="image-card">
+            <div class="image-card" onclick="openModal(3)">
                 <img src="Nodemcu Pinout.jpg" alt="NodeMCU Pinout">
                 <h3>NodeMCU Pinout</h3>
             </div>
-            <div class="image-card">
+            <div class="image-card" onclick="openModal(4)">
                 <img src="Nodemcu-DHT11- Sketch_bb.png" alt="Zirkuituaren Eskema">
                 <h3>Zirkuituaren Eskema</h3>
             </div>
         </div>
     </div>
+
+    <div id="imageModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <span class="modal-nav modal-prev" onclick="prevImage()">&#10094;</span>
+        <img id="modalImage" src="">
+        <span class="modal-nav modal-next" onclick="nextImage()">&#10095;</span>
+        <div id="modalTitle" class="modal-title"></div>
+    </div>
+
+    <script>
+        var images = [
+            { src: 'Dashboard.png', title: 'Dashboard' },
+            { src: 'Dht11.png', title: 'DHT11 Modulua' },
+            { src: 'Nodemcu.png', title: 'NodeMCU' },
+            { src: 'Nodemcu Pinout.jpg', title: 'NodeMCU Pinout' },
+            { src: 'Nodemcu-DHT11- Sketch_bb.png', title: 'Zirkuituaren Eskema' }
+        ];
+        var currentIndex = 0;
+
+        function openModal(index) {
+            currentIndex = index;
+            showImage();
+            document.getElementById('imageModal').classList.add('show');
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').classList.remove('show');
+        }
+
+        function showImage() {
+            document.getElementById('modalImage').src = images[currentIndex].src;
+            document.getElementById('modalTitle').textContent = images[currentIndex].title;
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage();
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage();
+        }
+
+        document.getElementById('imageModal').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+        document.addEventListener('keydown', function(e) {
+            if (document.getElementById('imageModal').classList.contains('show')) {
+                if (e.key === 'ArrowLeft') prevImage();
+                if (e.key === 'ArrowRight') nextImage();
+                if (e.key === 'Escape') closeModal();
+            }
+        });
+    </script>
 </body>
 </html>
