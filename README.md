@@ -85,10 +85,9 @@ ThingsBoard-en:
 ## Arazoak konpontzeko
 
 ### "Akatsa datuak irakurtzean!" nan balioak
-1. Egiaztatu pull-up erresistentzia (4.7kΩ) dagoela
-2. Egiaztatu VCC 5V-ra konektatuta dagoela (3.3V ez da nahikoa izan daitekeelako)
-3. Egiaztatu kableen konexioak
-4. Probatu beste DHT sensor bat
+1. Egiaztatu VCC 5V-ra konektatuta dagoela (3.3V ez da nahikoa izan daitekeelako)
+2. Egiaztatu kableen konexioak
+3. Probatu beste DHT sensor bat
 
 ### WiFi konexiorik ez
 1. Egiaztatu SSID eta pasahitza zuzenak direla
