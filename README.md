@@ -36,7 +36,12 @@ Fritzing software librearen irudian oinarrituta: [fritzing.org](https://fritzing
 
 ```ini
 [env:nodemcuv2]
+platform = espressif8266
+board = nodemcuv2
+framework = arduino
 monitor_speed = 115200
+lib_deps = adafruit/DHT sensor library@^1.4.6
+           knolleary/PubSubClient@^2.8
 ```
 
 ### 2. Konfiguratu WiFi eta MQTT
