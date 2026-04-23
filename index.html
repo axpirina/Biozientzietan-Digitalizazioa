@@ -61,7 +61,7 @@
             background: white;
             border-radius: 10px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-            min-width: 280px;
+            min-width: 320px;
             z-index: 1000;
             margin-top: 10px;
             overflow: hidden;
@@ -107,6 +107,10 @@
             font-size: 0.8em;
             color: #888;
             margin-top: 3px;
+        }
+        .docs-dropdown .download-icon::before {
+            content: "↓ ";
+            font-weight: bold;
         }
         .main-nav {
             background: rgba(0,0,0,0.2);
@@ -203,6 +207,26 @@
             <div class="docs-dropdown" id="docsDropdown">
                 <h3>Dokumentazioa</h3>
                 <ul>
+                    <li class="doc-category">ESQUEMA</li>
+                    <li>
+                        <a href="Dokumentuak/Irudiak/Nodemcu-DHT11-_Sketch_bb.png" target="_blank">
+                            Zirkuituaren Eschema
+                            <span>NodeMCU + DHT11 esquema irudia</span>
+                        </a>
+                    </li>
+                    <li class="doc-category">FRITZING DESKARGAK</li>
+                    <li>
+                        <a href="Dokumentuak/Fritzing%20elementuak/NodeMCU%20V1.0.fzpz" download class="download-icon">
+                            NodeMCU V1.0
+                            <span>Fritzing osagaia deskargatzeko</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Dokumentuak/Fritzing%20elementuak/KY-015%20Temperature%20&%20Humidity%20Sensor%20Module.fzpz" download class="download-icon">
+                            DHT11 Modulua
+                            <span>Fritzing osagaia deskargatzeko</span>
+                        </a>
+                    </li>
                     <li class="doc-category">IRUDIAK</li>
                     <li>
                         <a href="Dokumentuak/Irudiak/" target="_blank">

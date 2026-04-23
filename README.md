@@ -10,9 +10,18 @@ ESP8266 NodeMCU eta DHT11 sensorea erabiliz ThingsBoard-era tenperatura, hezetas
 
 ---
 
-![NodeMCU DHT11](Dokumentuak/Irudiak/Nodemcu-DHT11-_Sketch_bb.png)
+## Zirkuituaren Eschema
 
-ESP8266 NodeMCU eta DHT11 sensorea erabiliz ThingsBoard-era tenperatura eta hezetasuna bidaltzeko plataforma.
+![NodeMCU DHT11 Eschema](Dokumentuak/Irudiak/Nodemcu-DHT11-_Sketch_bb.png)
+
+### Fritzing Eskemak Deskargatzeko
+
+| Osagaia | Fitxategia |
+|---------|-----------|
+| NodeMCU V1.0 | [Deskargatu](Dokumentuak/Fritzing%20elementuak/NodeMCU%20V1.0.fzpz) |
+| DHT11 Modulua | [Deskargatu](Dokumentuak/Fritzing%20elementuak/KY-015%20Temperature%20&%20Humidity%20Sensor%20Module.fzpz) |
+
+---
 
 ## Osagaiak
 
@@ -34,6 +43,8 @@ ESP8266 NodeMCU eta DHT11 sensorea erabiliz ThingsBoard-era tenperatura eta heze
 ### Important: Pull-up Erresistentzia
 
 DATA eta VCC artean **4.7kΩ** pull-up erresistentzia jarri behar da komunikazio egokia lortzeko.
+
+---
 
 ## Softwarearen Konfigurazioa
 
@@ -79,12 +90,17 @@ pio run --target upload
 pio device monitor
 ```
 
+---
+
 ## Egindako Zerbitzuak
 
 - **WiFi**: Konfiguratzeko `include/secrets.h`-n
 - **ThingsBoard**: eu.thingsboard.cloud
 - **Tenperatura**: DHT11 sentsorea (0-50°C, ±2°C精确tasuna)
 - **Hezetasuna**: DHT11 sentsorea (20-90% RH, ±5%精确tasuna)
+- **Egonaldi Bero Indizea**: 17 hiritako latitude eta longitude koordenatuak
+
+---
 
 ## Arazoak konpontzeko
 
@@ -102,10 +118,16 @@ pio device monitor
 1. Egiaztatu token zuzena dela ThingsBoard-en
 2. Egiaztatu internet konexioa dagoela
 
+---
+
 ## Dokumentazio Gehiago
 
-- [Eskuliburuak](Dokumentuak/Eskuliburuak/)
-- [Fritzing Elementuak](Dokumentuak/Fritzing%20elementuak/)
+- [Irudiak](Dokumentuak/Irudiak/) - Zirkuituaren irudiak
+- [Datu Orriak](Dokumentuak/datu%20orriak/) - Datuentzako fitxak
+- [Eskuliburuak](Dokumentuak/Eskuliburuak/) - Dokumentazio liburuak
+- [Fritzing Elementuak](Dokumentuak/Fritzing%20elementuak/) - Fritzing zirkuitu fitxategiak
+
+---
 
 ## Lizentzia
 
