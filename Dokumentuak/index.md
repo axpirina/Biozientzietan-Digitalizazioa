@@ -4,22 +4,37 @@ title: Hasiera
 ---
 
 <style>
-@media (min-width: 1200px) {
-  .page-content {
-    max-width: 1400px !important;
-    margin: 0 auto !important;
-    padding: 0 40px !important;
-  }
+@media (min-width: 1024px) {
   body {
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 30px 50px;
+  }
+  .page-wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
   }
   .main-content {
     background: white;
     border-radius: 15px;
-    padding: 40px;
+    padding: 50px;
     box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-    margin: 30px auto !important;
-    max-width: 1400px !important;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  p, li {
+    font-size: 1.1em;
+  }
+  table {
+    font-size: 1em;
+  }
+}
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px;
   }
 }
 </style>
