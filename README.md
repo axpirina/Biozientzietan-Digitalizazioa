@@ -86,7 +86,7 @@ Kopiatu `include/secrets.h.example` fitxategia `include/secrets.h` izenarekin et
 
 ### MQTT konexiorik ez
 1. Egiaztatu token zuzena dela 
-2. Egiaztatu [internet konexioa dagoela](https://eu.thingsboard.cloud) erabiltzen ari zarela.
+2. Egiaztatu eu.thingsboard.cloud erabiltzen ari zarela.
 
 ---
 
