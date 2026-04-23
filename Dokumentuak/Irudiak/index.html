@@ -44,6 +44,11 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .image-card:hover {
+            transform: scale(1.03);
         }
         .image-card img {
             width: 100%;
@@ -57,6 +62,45 @@
             font-size: 0.9em;
             color: #333;
         }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+        }
+        .modal.show {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+        }
+        .modal-title {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 1.2em;
+            background: rgba(0,0,0,0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -65,27 +109,49 @@
         <a href="https://axpirina.github.io/Biozientzietan-Digitalizazioa/" class="back-link">← Itzuli Dashboard-era</a>
         
         <div class="gallery">
-            <div class="image-card">
+            <div class="image-card" onclick="openModal(this)">
                 <img src="Dashboard.png" alt="Dashboard">
                 <h3>Dashboard</h3>
             </div>
-            <div class="image-card">
+            <div class="image-card" onclick="openModal(this)">
                 <img src="Dht11.png" alt="DHT11 Modulua">
                 <h3>DHT11 Modulua</h3>
             </div>
-            <div class="image-card">
+            <div class="image-card" onclick="openModal(this)">
                 <img src="Nodemcu.png" alt="NodeMCU">
                 <h3>NodeMCU</h3>
             </div>
-            <div class="image-card">
+            <div class="image-card" onclick="openModal(this)">
                 <img src="Nodemcu Pinout.jpg" alt="NodeMCU Pinout">
                 <h3>NodeMCU Pinout</h3>
             </div>
-            <div class="image-card">
+            <div class="image-card" onclick="openModal(this)">
                 <img src="Nodemcu-DHT11- Sketch_bb.png" alt="Zirkuituaren Eskema">
                 <h3>Zirkuituaren Eskema</h3>
             </div>
         </div>
     </div>
+
+    <div id="imageModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="">
+        <div id="modalTitle" class="modal-title"></div>
+    </div>
+
+    <script>
+        function openModal(card) {
+            var img = card.querySelector('img');
+            var title = card.querySelector('h3').textContent;
+            document.getElementById('modalImage').src = img.src;
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('imageModal').classList.add('show');
+        }
+        function closeModal() {
+            document.getElementById('imageModal').classList.remove('show');
+        }
+        document.getElementById('imageModal').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+    </script>
 </body>
 </html>
