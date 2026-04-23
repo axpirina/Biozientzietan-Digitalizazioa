@@ -1,6 +1,6 @@
 # Biozientzietan Digitalizazioa - NodeMCU DHT11 Proiektua
 
-[Ikusi dashboard-a](https://eu.thingsboard.cloud/dashboard/b4a992a0-398d-11f1-ba44-c54ab1d7f1f4?publicId=ebbac470-3d80-11f1-92f7-cbbd42e0f134){:target="_blank"}
+[Ikusi dashboard-a](include/dashboard.html){:target="_blank"}
 
 ![NodeMCU DHT11](Dokumentuak/Irudiak/Nodemcu-DHT11-_Sketch_bb.png)
 

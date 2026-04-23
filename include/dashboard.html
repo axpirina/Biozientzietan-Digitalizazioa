@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egonaldi Bero Indizea - Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        h1 {
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .dashboard-container {
+            width: 100%;
+            max-width: 1400px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .dashboard-header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .dashboard-header h2 {
+            font-size: 1.2em;
+        }
+        .dashboard-link {
+            background: #3498db;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        .dashboard-link:hover {
+            background: #2980b9;
+        }
+        iframe {
+            width: 100%;
+            height: 85vh;
+            border: none;
+            display: block;
+        }
+        .info {
+            color: rgba(255,255,255,0.9);
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Egonaldi Bero Indizea - Denbora Errealeko Dashboard</h1>
+    
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h2>DHT11 Sensorren Datuak - ThingsBoard</h2>
+            <a href="https://eu.thingsboard.cloud/dashboard/b4a992a0-398d-11f1-ba44-c54ab1d7f1f4?publicId=ebbac470-3d80-11f1-92f7-cbbd42e0f134" 
+               target="_blank" 
+               class="dashboard-link">
+                Ireki ThingsBoard-en
+            </a>
+        </div>
+        <iframe 
+            src="https://eu.thingsboard.cloud/dashboard/b4a992a0-398d-11f1-ba44-c54ab1d7f1f4?publicId=ebbac470-3d80-11f1-92f7-cbbd42e0f134"
+            title="ThingsBoard Dashboard">
+        </iframe>
+    </div>
+    
+    <p class="info">
+        Dashboard hau ESP8266 NodeMCU eta DHT11 sentsoretik jasotzen ditu datuak denbora errealean.
+    </p>
+</body>
+</html>
