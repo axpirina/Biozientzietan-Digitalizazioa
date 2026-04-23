@@ -1,2 +1,19 @@
 title: "Biozientzietan Digitalizazioa"
-description: "ESP8266 proiektuaren dokumentazioa"
+description: "ESP8266 proiektuaren dokumentazioa - DHT11 eta ThingsBoard"
+baseurl: ""
+url: ""
+theme: minima
+lang: eu
+
+sass:
+  style: compressed
+
+_defaults:
+  scope:
+    path: ""
+  values:
+    layout: default
+
+collections:
+  pages:
+    output: true
