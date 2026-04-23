@@ -54,7 +54,8 @@ Kopiatu `include/secrets.h.example` fitxategia `include/secrets.h` izenarekin et
 #define MQTT_TOPIC "v1/devices/me/telemetry"
 ```
 
-ThingsBoard-en:
+### 3. ThingsBoard-en
+
 1. Sortu device bat
 2. Kopiatu "Access Token" (MQTT_USERNAME bezala erabili)
 
