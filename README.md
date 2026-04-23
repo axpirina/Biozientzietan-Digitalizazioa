@@ -85,8 +85,8 @@ Kopiatu `include/secrets.h.example` fitxategia `include/secrets.h` izenarekin et
 2. Egiaztatu WiFi frekuentzia (2.4GHz behar da, 5GHz ez du onartzen)
 
 ### MQTT konexiorik ez
-1. Egiaztatu token zuzena dela ThingsBoard-en
-2. Egiaztatu internet konexioa dagoela
+1. Egiaztatu token zuzena dela 
+2. Egiaztatu [internet konexioa dagoela](https://eu.thingsboard.cloud) erabiltzen ari zarela.
 
 ---
 
