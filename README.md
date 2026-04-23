@@ -67,8 +67,8 @@ Kopiatu `include/secrets.h.example` fitxategia `include/secrets.h` izenarekin et
 
 - **WiFi**: Konfiguratzeko `include/secrets.h`-n
 - **ThingsBoard**: eu.thingsboard.cloud
-- **Tenperatura**: DHT11 sentsorea (0-50°C, ±2°C zehaztasuna)
-- **Hezetasuna**: DHT11 sentsorea (20-90% RH, ±5% zehaztasuna)
+- **Tenperatura**: DHT11 sentsorea (0-50°C, ±2°C精确tasuna)
+- **Hezetasuna**: DHT11 sentsorea (20-90% RH, ±5%精确tasuna)
 - **Egonaldi Bero Indizea**: 17 hiritako latitude eta longitude koordenatuak
 
 ---
@@ -82,7 +82,6 @@ Kopiatu `include/secrets.h.example` fitxategia `include/secrets.h` izenarekin et
 
 ### WiFi konexiorik ez
 1. Egiaztatu SSID eta pasahitza zuzenak direla
-2. Egiaztatu WiFi frekuentzia (2.4GHz behar da, 5GHz ez du onartzen)
 
 ### MQTT konexiorik ez
 1. Egiaztatu token zuzena dela 
