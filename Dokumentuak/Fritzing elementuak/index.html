@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fritzing Elementuak</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        .back-link {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .back-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+        }
+        .download-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        .download-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .download-card h3 {
+            padding: 15px;
+            background: #2c3e50;
+            color: white;
+            font-size: 1em;
+        }
+        .download-btn {
+            display: block;
+            padding: 15px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .download-btn:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fritzing Elementuak</h1>
+        <a href="https://axpirina.github.io/Biozientzietan-Digitalizazioa/" class="back-link">← Itzuli Dashboard-era</a>
+        
+        <div class="gallery">
+            <div class="download-card">
+                <img src="../Irudiak/Nodemcu.png" alt="NodeMCU V1.0">
+                <h3>NodeMCU V1.0</h3>
+                <a href="../Fritzing%20elementuak/NodeMCU%20V1.0.fzpz" download class="download-btn">
+                    ⬇ Deskargatu Fritzing fitxategia
+                </a>
+            </div>
+            <div class="download-card">
+                <img src="../Irudiak/Dht11.png" alt="DHT11 Modulua">
+                <h3>DHT11 Modulua</h3>
+                <a href="../Fritzing%20elementuak/KY-015%20Temperature%20&%20Humidity%20Sensor%20Module.fzpz" download class="download-btn">
+                    ⬇ Deskargatu Fritzing fitxategia
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
