@@ -30,25 +30,6 @@ Fritzing software librearen irudian oinarrituta: [fritzing.org](https://fritzing
 
 ---
 
-## Konexioak
-
-<table>
-<tr>
-<td>
-
-| DHT11 Pin | NodeMCU Pin |
-|-----------|------------|
-| VCC | 3.3V edo 5V |
-| GND | GND |
-| DATA | D1 (GPIO5) |
-
-</td>
-<td valign="middle"><img src="Dokumentuak/Irudiak/Dht11.png" width="150"></td>
-</tr>
-</table>
-
----
-
 ## Softwarearen Konfigurazioa
 
 ### 1. Aldatu platformio.ini-n
