@@ -67,8 +67,8 @@ Kopiatu `include/secrets.h.example` fitxategia `include/secrets.h` izenarekin et
 
 - **WiFi**: Konfiguratzeko `include/secrets.h`-n
 - **ThingsBoard**: eu.thingsboard.cloud
-- **Tenperatura**: DHT11 sentsorea (0-50°C, ±2°C精确tasuna)
-- **Hezetasuna**: DHT11 sentsorea (20-90% RH, ±5%精确tasuna)
+- **Tenperatura**: DHT11 sentsorea (0-50°C, ±2°C zehaztasuna)
+- **Hezetasuna**: DHT11 sentsorea (20-90% RH, ±5% zehaztasuna)
 - **Egonaldi Bero Indizea**: 17 hiritako latitude eta longitude koordenatuak
 
 ---
