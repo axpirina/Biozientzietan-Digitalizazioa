@@ -32,49 +32,13 @@
             border-radius: 15px;
             padding: 20px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-            max-width: 95%;
+            width: 100%;
+            max-width: 1400px;
         }
         .image-container img {
             width: 100%;
             height: auto;
             border-radius: 10px;
-            cursor: pointer;
-        }
-        .modal {
-            display: flex;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.95);
-            justify-content: center;
-            align-items: center;
-        }
-        .modal img {
-            max-width: 95%;
-            max-height: 95%;
-            border-radius: 10px;
-        }
-        .modal-close {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            color: white;
-            font-size: 40px;
-            cursor: pointer;
-        }
-        .modal-title {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: white;
-            font-size: 1.2em;
-            background: rgba(0,0,0,0.5);
-            padding: 10px 20px;
-            border-radius: 5px;
         }
     </style>
 </head>
@@ -82,28 +46,7 @@
     <a href="https://axpirina.github.io/Biozientzietan-Digitalizazioa/" class="back-link">← Itzuli Dashboard-era</a>
     
     <div class="image-container">
-        <img src="Nodemcu-DHT11- Sketch_bb.png" alt="Zirkuituaren Eskema" onclick="openModal(this)">
+        <img src="Nodemcu-DHT11- Sketch_bb.png" alt="Zirkuituaren Eskema">
     </div>
-
-    <div id="imageModal" class="modal" onclick="closeModal(event)">
-        <span class="modal-close" onclick="closeModal(event)">&times;</span>
-        <img id="modalImage" src="">
-        <div class="modal-title">Zirkuituaren Eskema</div>
-    </div>
-
-    <script>
-        window.onload = function() {
-            openModal(document.querySelector('.image-container img'));
-        };
-        function openModal(img) {
-            document.getElementById('modalImage').src = img.src;
-            document.getElementById('imageModal').style.display = 'flex';
-        }
-        function closeModal(e) {
-            if (e.target !== document.getElementById('modalImage')) {
-                document.getElementById('imageModal').style.display = 'none';
-            }
-        }
-    </script>
 </body>
 </html>
