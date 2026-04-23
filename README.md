@@ -38,6 +38,8 @@ Fritzing software librearen irudian oinarrituta: [fritzing.org](https://fritzing
 monitor_speed = 115200
 ```
 
+*Serie monitoreko datuen irakurketa sinkronizatzeko balio hau aldatu behar da.*
+
 ### 2. Konfiguratu WiFi eta MQTT
 
 Kopiatu `include/secrets.h.example` fitxategia `include/secrets.h` izenarekin eta aldatu balioak:
