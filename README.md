@@ -37,8 +37,7 @@ Fritzing software librearen irudian oinarrituta: [fritzing.org](https://fritzing
 | VCC | 3.3V edo 5V |
 | GND | GND |
 | DATA | D1 (GPIO5) |
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="Dokumentuak/Irudiak/Dht11.png" width="150">
+| <img src="Dokumentuak/Irudiak/Dht11.png" width="150"> | |
 
 ---
 
