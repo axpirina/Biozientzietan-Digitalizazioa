@@ -1,6 +1,16 @@
 # Biozientzietan Digitalizazioa - NodeMCU DHT11 Proiektua
 
-[Ikusi dashboard-a](include/dashboard.html){:target="_blank"}
+ESP8266 NodeMCU eta DHT11 sensorea erabiliz ThingsBoard-era tenperatura, hezetasuna eta egonaldi bero indizea bidaltzeko plataforma.
+
+---
+
+## Dashboard - Denbora Errealeko Datuak
+
+![Dashboard Preview](https://thingsboard.io/images/demo/dashboards/temperature.png)
+
+Erakusklik: **[Ikusi Dashboard-a iframe moduan](include/dashboard.html)** {:target="_blank"}
+
+---
 
 ![NodeMCU DHT11](Dokumentuak/Irudiak/Nodemcu-DHT11-_Sketch_bb.png)
 
