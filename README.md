@@ -59,6 +59,8 @@ Kopiatu `include/secrets.h.example` fitxategia `include/secrets.h` izenarekin et
 1. Sortu device bat
 2. Kopiatu "Access Token" (MQTT_USERNAME bezala erabili)
 
+[ThingsBoard](https://eu.thingsboard.cloud/home)
+
 ---
 
 ## Egindako Zerbitzuak
