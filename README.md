@@ -6,9 +6,9 @@ ESP8266 NodeMCU eta DHT11 sensorea erabiliz ThingsBoard-era tenperatura, hezetas
 
 ## Dashboard - Denbora Errealeko Datuak
 
-![Dashboard Preview](https://thingsboard.io/images/demo/dashboards/temperature.png)
+[![Dashboard - Klik egin iframe-a ikusteko](https://thingsboard.io/images/demo/dashboards/temperature.png)](include/dashboard.html){:target="_blank"}
 
-Erakusklik: **[Ikusi Dashboard-a iframe moduan](include/dashboard.html)** {:target="_blank"}
+*Erakusklik: [Ikusi Dashboard-a iframe moduan](include/dashboard.html){:target="_blank"}*
 
 ---
 
