@@ -28,15 +28,6 @@ ESP8266 NodeMCU eta DHT11 sensorea erabiliz ThingsBoard-era tenperatura, hezetas
 
 ---
 
-## Osagaiak
-
-| Osagaia | Deskribapena |
-|---------|-------------|
-| ESP8266 NodeMCU | Mikrokontrolagailua (WiFi) |
-| DHT11 | Tenperatura eta hezetasun sentsorea |
-| Kableak | Ribbon kableak |
-| Protoboard | (Aukerakoa) |
-
 ## Konexioak
 
 | DHT11 Pin | NodeMCU Pin |
