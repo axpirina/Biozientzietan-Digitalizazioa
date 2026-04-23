@@ -36,6 +36,7 @@
         .header-links {
             display: flex;
             gap: 15px;
+            position: relative;
         }
         .header-links a {
             color: white;
@@ -47,6 +48,65 @@
         }
         .header-links a:hover {
             background: rgba(255,255,255,0.3);
+        }
+        .docs-btn {
+            cursor: pointer;
+            position: relative;
+        }
+        .docs-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            min-width: 280px;
+            z-index: 1000;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+        .docs-dropdown.show {
+            display: block;
+        }
+        .docs-dropdown h3 {
+            background: #2c3e50;
+            color: white;
+            padding: 12px 20px;
+            font-size: 1em;
+        }
+        .docs-dropdown ul {
+            list-style: none;
+            padding: 10px 0;
+        }
+        .docs-dropdown li {
+            border-bottom: 1px solid #eee;
+        }
+        .docs-dropdown li:last-child {
+            border-bottom: none;
+        }
+        .docs-dropdown a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            padding: 12px 20px;
+            transition: background 0.3s;
+        }
+        .docs-dropdown a:hover {
+            background: #f0f0f0;
+        }
+        .docs-dropdown .doc-category {
+            font-size: 0.75em;
+            color: #666;
+            background: #f5f5f5;
+            padding: 8px 20px;
+            font-weight: bold;
+        }
+        .docs-dropdown a span {
+            display: block;
+            font-size: 0.8em;
+            color: #888;
+            margin-top: 3px;
         }
         .main-nav {
             background: rgba(0,0,0,0.2);
@@ -126,6 +186,11 @@
             .dashboard-container {
                 padding: 10px;
             }
+            .docs-dropdown {
+                right: auto;
+                left: 0;
+                min-width: 250px;
+            }
         }
     </style>
 </head>
@@ -134,6 +199,76 @@
         <h1>Egonaldi Bero Indizea - Denbora Errealeko Dashboard</h1>
         <nav class="header-links">
             <a href="https://github.com/axpirina/Biozientzietan-Digitalizazioa" target="_blank">GitHub</a>
+            <a href="#" class="docs-btn" onclick="toggleDocs(event)">Docs ▾</a>
+            <div class="docs-dropdown" id="docsDropdown">
+                <h3>Dokumentazioa</h3>
+                <ul>
+                    <li class="doc-category">IRUDIAK</li>
+                    <li>
+                        <a href="Dokumentuak/Irudiak/" target="_blank">
+                            Irudiak
+                            <span>Zirkuituaren irudi eta argazkiak</span>
+                        </a>
+                    </li>
+                    <li class="doc-category">FITXAK</li>
+                    <li>
+                        <a href="Dokumentuak/datu%20orriak/" target="_blank">
+                            Datu Orriak
+                            <span>Datuentzako fitxak</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Dokumentuak/Eskuliburuak/" target="_blank">
+                            Eskuliburuak
+                            <span>Dokumentazio liburuak</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Dokumentuak/Fritzing%20elementuak/" target="_blank">
+                            Fritzing Elementuak
+                            <span>Fritzing zirkuitu fitxategiak</span>
+                        </a>
+                    </li>
+                    <li class="doc-category">KODEA</li>
+                    <li>
+                        <a href="https://github.com/axpirina/Biozientzietan-Digitalizazioa/blob/main/src/main.cpp" target="_blank">
+                            main.cpp
+                            <span>ESP8266 programaren kodea</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/axpirina/Biozientzietan-Digitalizazioa/blob/main/README.md" target="_blank">
+                            README
+                            <span>Proiektuaren dokumentazio orria</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/axpirina/Biozientzietan-Digitalizazioa/blob/main/LICENSE" target="_blank">
+                            LICENSE
+                            <span>MIT lizentzia</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/axpirina/Biozientzietan-Digitalizazioa/blob/main/platformio.ini" target="_blank">
+                            platformio.ini
+                            <span>PlatformIO konfigurazioa</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/axpirina/Biozientzietan-Digitalizazioa/tree/main/include" target="_blank">
+                            include/
+                            <span>Include fitxategiak</span>
+                        </a>
+                    </li>
+                    <li class="doc-category">BESTEAK</li>
+                    <li>
+                        <a href="https://github.com/axpirina/Biozientzietan-Digitalizazioa/blob/main/Dokumentuak/NodeMCU-a%20PROGRAMATZEN.pdf" target="_blank">
+                            PDF Dokumentua
+                            <span>NodeMCU programatzeko gida</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     
@@ -145,10 +280,6 @@
         <a href="Dokumentuak/Fritzing%20elementuak/" target="_blank">Fritzing Elementuak</a>
         <a href="https://github.com/axpirina/Biozientzietan-Digitalizazioa/blob/main/src/main.cpp" target="_blank">main.cpp</a>
         <a href="https://github.com/axpirina/Biozientzietan-Digitalizazioa/blob/main/README.md" target="_blank">README</a>
-        <a href="https://github.com/axpirina/Biozientzietan-Digitalizazioa/blob/main/LICENSE" target="_blank">LICENSE</a>
-        <a href="https://github.com/axpirina/Biozientzietan-Digitalizazioa/blob/main/platformio.ini" target="_blank">platformio.ini</a>
-        <a href="https://github.com/axpirina/Biozientzietan-Digitalizazioa/tree/main/include" target="_blank">include/</a>
-        <a href="https://github.com/axpirina/Biozientzietan-Digitalizazioa/blob/main/Dokumentuak/NodeMCU-a%20PROGRAMATZEN.pdf" target="_blank">PDF Dokumentua</a>
     </nav>
     
     <main class="dashboard-container">
@@ -165,5 +296,20 @@
             </iframe>
         </div>
     </main>
+
+    <script>
+        function toggleDocs(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            document.getElementById('docsDropdown').classList.toggle('show');
+        }
+        document.addEventListener('click', function(event) {
+            var dropdown = document.getElementById('docsDropdown');
+            var docsBtn = document.querySelector('.docs-btn');
+            if (!dropdown.contains(event.target) && !docsBtn.contains(event.target)) {
+                dropdown.classList.remove('show');
+            }
+        });
+    </script>
 </body>
 </html>
