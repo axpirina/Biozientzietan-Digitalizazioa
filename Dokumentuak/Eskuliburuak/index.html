@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eskuliburuak</title>
+    <title>Eskema Elektronikoa</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -15,49 +15,29 @@
             align-items: center;
             padding: 20px;
         }
-        .container {
-            background: white;
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-            width: 100%;
-            max-width: 1000px;
-        }
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 1.5em;
-        }
         .back-link {
-            color: #3498db;
+            color: white;
             text-decoration: none;
             padding: 10px 20px;
-            background: #f0f0f0;
+            background: rgba(255,255,255,0.2);
             border-radius: 5px;
             display: inline-block;
             margin-bottom: 20px;
         }
         .back-link:hover {
-            background: #e0e0e0;
+            background: rgba(255,255,255,0.3);
         }
-        .pdf-info {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #666;
-        }
-        .pdf-info a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .pdf-info a:hover {
-            text-decoration: underline;
-        }
-        embed {
+        .image-container {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
             width: 100%;
-            height: 700px;
-            border: none;
+            max-width: 1200px;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
             border-radius: 10px;
         }
     </style>
@@ -65,14 +45,8 @@
 <body>
     <a href="https://axpirina.github.io/Biozientzietan-Digitalizazioa/" class="back-link">← Itzuli Dashboard-era</a>
     
-    <div class="container">
-        <h1>Eskuliburua: NodeMCU-a PROGRAMATZEN</h1>
-        
-        <div class="pdf-info">
-            <p>PDF dokumentua ikusteko behean dago. <a href="NodeMCU-a%20PROGRAMATZEN.pdf" target="_blank">Zuzenean deskargatzeko klikatu hemen</a></p>
-        </div>
-        
-        <embed src="NodeMCU-a%20PROGRAMATZEN.pdf" type="application/pdf">
+    <div class="image-container">
+        <img src="../Irudiak/Nodemcu-DHT11- Sketch_bb.png" alt="Zirkuituaren Eskema">
     </div>
 </body>
 </html>
