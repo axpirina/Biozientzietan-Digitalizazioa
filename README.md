@@ -38,6 +38,8 @@ Fritzing software librearen irudian oinarrituta: [fritzing.org](https://fritzing
 | GND | GND |
 | DATA | D1 (GPIO5) |
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="Dokumentuak/Irudiak/Dht11.png" width="150">
+
 ---
 
 ## Softwarearen Konfigurazioa
