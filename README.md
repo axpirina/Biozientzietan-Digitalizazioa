@@ -36,10 +36,6 @@ ESP8266 NodeMCU eta DHT11 sensorea erabiliz ThingsBoard-era tenperatura, hezetas
 | GND | GND |
 | DATA | D1 (GPIO5) |
 
-### Important: Pull-up Erresistentzia
-
-DATA eta VCC artean **4.7kΩ** pull-up erresistentzia jarri behar da komunikazio egokia lortzeko.
-
 ---
 
 ## Softwarearen Konfigurazioa
