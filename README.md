@@ -45,7 +45,7 @@ Kopiatu `include/secrets.h.example` fitxategia `include/secrets.h` izenarekin et
 
 #define MQTT_SERVER "eu.thingsboard.cloud"
 #define MQTT_PORT 1883
-#define MQTT_USERNAME "ZURE_TOKEN"
+#define MQTT_USERNAME "ZURE_ACCESS_TOKENA"
 #define MQTT_TOPIC "v1/devices/me/telemetry"
 ```
 
