@@ -16,7 +16,7 @@ ESP8266 NodeMCU eta DHT11 sensorea erabiliz ThingsBoard-era tenperatura, hezetas
 
 ---
 
-## 2.Zirkuituaren eskema elektronikoa
+## 2. Zirkuituaren eskema elektronikoa
 
 <p align="center">
 <img src="Dokumentuak/Irudiak/Nodemcu-DHT11-%20Sketch_bb.png" width="50%">
