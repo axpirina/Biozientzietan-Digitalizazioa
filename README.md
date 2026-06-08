@@ -67,7 +67,7 @@ monitor_speed = 115200
 ## 4.Sare Arkitektura
 
 <p align="center">
-<img src="Dokumentuak/Irudiak/Estazio Metereologikoa.drawio.png" width="50%">
+<img src="Dokumentuak/Irudiak/Estazio Metereologikoa.drawio.png" width="80%">
 </p>
 
 
