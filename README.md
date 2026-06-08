@@ -67,17 +67,11 @@ monitor_speed = 115200
 ## 4.Sare Arkitektura
 
 <p align="center">
-<img src="Dokumentuak/Irudiak/Nodemcu-DHT11-%20Sketch_bb.png" width="50%">
+<img src="Dokumentuak/Irudiak/Estazio Metereologikoa.drawio.png" width="50%">
 </p>
 
-### Fritzing Eskemak Deskargatzeko
 
-| Osagaia | Irudia | Fitxategia |
-|---------|--------|------------|
-| NodeMCU V1.0 | <img src="Dokumentuak/Irudiak/Nodemcu.png" width="80"> | [Deskargatu](Dokumentuak/Fritzing%20elementuak/NodeMCU%20V1.0.fzpz) |
-| DHT11 Modulua | <img src="Dokumentuak/Irudiak/Dht11.png" width="80"> | [Deskargatu](Dokumentuak/Fritzing%20elementuak/KY-015%20Temperature%20&%20Humidity%20Sensor%20Module.fzpz) |
-
-Fritzing software librearen irudian oinarrituta: [fritzing.org](https://fritzing.org/)
+Draw.io web errremintan oinarritua: [[draw.io](https://app.diagrams.net/)]
 
 ---
 ## 5.Arduino programa
