@@ -33,7 +33,7 @@ Fritzing software librearen irudian oinarrituta: [fritzing.org](https://fritzing
 
 ---
 
-## 3. Lainoaren Konfigurazioa: WiFi eta MQTT. Thingsboardekin konexioa include/secrets.h fitxategian definitzen da.
+## 3. Lainoaren Konfigurazioa (THINGSBOARD): WiFi eta MQTT. Thingsboardekin konexioa include/secrets.h fitxategian definitzen da.
 
 [eu.thingsboard.cloud](https://eu.thingsboard.cloud/home) plataformaren konfigurazioa.
 
