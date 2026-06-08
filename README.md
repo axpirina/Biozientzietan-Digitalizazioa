@@ -2,7 +2,7 @@
 
 [https://axpirina.github.io/Biozientzietan-Digitalizazioa/](https://axpirina.github.io/Biozientzietan-Digitalizazioa/)
 
-ESP8266 NodeMCU eta DHT11 sensorea erabiliz ThingsBoard-era tenperatura, hezetasuna eta egonaldi bero indizea bidaltzeko plataforma.
+ESP8266 NodeMCU eta DHT11 sensorea erabiliz ThingsBoard-era tenperatura, hezetasuna eta intza puntua bidaltzen dituen proiektua.
 
 ---
 
