@@ -6,16 +6,17 @@ ESP8266 NodeMCU eta DHT11 sensorea erabiliz ThingsBoard-era tenperatura, hezetas
 
 ---
 
-## Dashboard - Denbora Errealeko Datuak
+## 1. Magnituteak. Hauek dira gure gailuak neurtuko dituen magnituteak.
 
-<p align="center">
-  <img src="Dokumentuak/Irudiak/Dashboard.png" width="600"><br>
-  <a href="https://eu.thingsboard.cloud/dashboard/b4a992a0-398d-11f1-ba44-c54ab1d7f1f4?publicId=ebbac470-3d80-11f1-92f7-cbbd42e0f134">Ikusi Dashboard-a</a>
-</p>
+- **Tenperatura**: DHT11 sentsorea (0-50°C, ±2°C zehaztasuna)
+- **Hezetasuna**: DHT11 sentsorea (20-90% RH, ±5% zehaztasuna)
+- **Intza puntua**: DHT11 sentsorea (0-50°C, ±2°C zehaztasuna)
+
+- **Laginketa Maiztasuna**: Laginketa maiztasuna 2s takoa izango da.
 
 ---
 
-## Zirkuituaren eskema elektronikoa
+## 2.Zirkuituaren eskema elektronikoa
 
 <p align="center">
 <img src="Dokumentuak/Irudiak/Nodemcu-DHT11-%20Sketch_bb.png" width="50%">
@@ -32,17 +33,7 @@ Fritzing software librearen irudian oinarrituta: [fritzing.org](https://fritzing
 
 ---
 
-## Softwarearen Konfigurazioa
-
-### 1. Aldatu platformio.ini-n
-
-```ini
-monitor_speed = 115200
-```
-
-*Serie monitoreko datuen irakurketa sinkronizatzeko balio hau aldatu behar da.*
-
-### 2. Konfiguratu WiFi eta MQTT
+## 3. Lainoaren Konfigurazioa WiFi eta MQTT. Thingsboardekin konexioa include/secrets.h fitxategian definitzen da.
 
 Kopiatu `include/secrets.h.example` fitxategia `include/secrets.h` izenarekin eta aldatu balioak:
 
@@ -56,12 +47,65 @@ Kopiatu `include/secrets.h.example` fitxategia `include/secrets.h` izenarekin et
 #define MQTT_TOPIC "v1/devices/me/telemetry"
 ```
 
-### 3. ThingsBoard-en
+## Softwarearen Konfigurazio gehigarria
+
+### 1. Aldatu platformio.ini-n
+
+```ini
+monitor_speed = 115200
+```
+
+*Serie monitoreko datuen irakurketa sinkronizatzeko balio hau aldatu behar da.*
+### 2. ThingsBoard-en
 
 1. Sortu device bat
 2. Kopiatu "Access Token" (MQTT_USERNAME bezala erabili)
 
 [ThingsBoard](https://eu.thingsboard.cloud/home)
+
+---
+## 4.Sare Arkitektura
+
+<p align="center">
+<img src="Dokumentuak/Irudiak/Nodemcu-DHT11-%20Sketch_bb.png" width="50%">
+</p>
+
+### Fritzing Eskemak Deskargatzeko
+
+| Osagaia | Irudia | Fitxategia |
+|---------|--------|------------|
+| NodeMCU V1.0 | <img src="Dokumentuak/Irudiak/Nodemcu.png" width="80"> | [Deskargatu](Dokumentuak/Fritzing%20elementuak/NodeMCU%20V1.0.fzpz) |
+| DHT11 Modulua | <img src="Dokumentuak/Irudiak/Dht11.png" width="80"> | [Deskargatu](Dokumentuak/Fritzing%20elementuak/KY-015%20Temperature%20&%20Humidity%20Sensor%20Module.fzpz) |
+
+Fritzing software librearen irudian oinarrituta: [fritzing.org](https://fritzing.org/)
+
+---
+## 5.Arduino programa
+
+<p align="center">
+<img src="Dokumentuak/Irudiak/Nodemcu-DHT11-%20Sketch_bb.png" width="50%">
+</p>
+
+### Fritzing Eskemak Deskargatzeko
+
+| Osagaia | Irudia | Fitxategia |
+|---------|--------|------------|
+| NodeMCU V1.0 | <img src="Dokumentuak/Irudiak/Nodemcu.png" width="80"> | [Deskargatu](Dokumentuak/Fritzing%20elementuak/NodeMCU%20V1.0.fzpz) |
+| DHT11 Modulua | <img src="Dokumentuak/Irudiak/Dht11.png" width="80"> | [Deskargatu](Dokumentuak/Fritzing%20elementuak/KY-015%20Temperature%20&%20Humidity%20Sensor%20Module.fzpz) |
+
+Fritzing software librearen irudian oinarrituta: [fritzing.org](https://fritzing.org/)
+
+---
+
+
+
+
+## 6. Dashboarda - Denbora Errealeko Datuak
+
+<p align="center">
+  <img src="Dokumentuak/Irudiak/Dashboard.png" width="600"><br>
+  <a href="https://eu.thingsboard.cloud/dashboard/b4a992a0-398d-11f1-ba44-c54ab1d7f1f4?publicId=ebbac470-3d80-11f1-92f7-cbbd42e0f134">Ikusi Dashboard-a</a>
+</p>
 
 ---
 
