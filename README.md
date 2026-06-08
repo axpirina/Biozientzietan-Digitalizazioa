@@ -61,7 +61,7 @@ monitor_speed = 115200
 ### ThingsBoard-en
 
 1. Sortu device bat
-2. Kopiatu "Access Token" (MQTT_USERNAME bezala erabili)
+2. Kopiatu "Access Tokena" (MQTT_USERNAME bezala erabili)
 
 [ThingsBoard](https://eu.thingsboard.cloud/home)
 
