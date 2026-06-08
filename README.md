@@ -51,14 +51,14 @@ Kopiatu `include/secrets.h.example` fitxategia `include/secrets.h` izenarekin et
 
 ## Softwarearen Konfigurazio gehigarria
 
-### 1. Aldatu platformio.ini-n
+### Aldatu platformio.ini-n
 
 ```ini
 monitor_speed = 115200
 ```
 
 *Serie monitoreko datuen irakurketa sinkronizatzeko balio hau aldatu behar da.*
-### 2. ThingsBoard-en
+### ThingsBoard-en
 
 1. Sortu device bat
 2. Kopiatu "Access Token" (MQTT_USERNAME bezala erabili)
