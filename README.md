@@ -267,14 +267,10 @@ void loop() {
 
 ---
 
-## Egindako Zerbitzuak
+## Erabilitako Zerbitzuak
 
-- **WiFi**: Konfiguratzeko `include/secrets.h`-n
-- **ThingsBoard**: eu.thingsboard.cloud
-- **Tenperatura**: DHT11 sentsorea (0-50°C, ±2°C精确tasuna)
-- **Hezetasuna**: DHT11 sentsorea (20-90% RH, ±5%精确tasuna)
-- **Egonaldi Bero Indizea**: 17 hiritako latitude eta longitude koordenatuak
-
+- **WiFia**: Konfiguratzeko `include/secrets.h` artxiboa erabili
+- **ThingsBoard**: [eu.thingsboard.cloud](https://eu.thingsboard.cloud/home) Konfiguratzeko `include/secrets.h` artxiboa erabili
 ---
 
 ## Arazoak konpontzeko
@@ -283,6 +279,11 @@ void loop() {
 1. Egiaztatu VCC 5V-ra konektatuta dagoela (3.3V ez da nahikoa izan daitekeelako)
 2. Egiaztatu kableen konexioak
 3. Probatu beste DHT sensor bat
+
+### "CP210X Driverra gaizki instalatuta"
+1. windows 11ren kasuetan pasa ohi da.
+2. Desinstalatu aurreko Driverrak. Windows-en Gailu Kudeatzailera joan (Win + X eta Gailu Kudeatzaila) eta akats ikurra duen COM gailuaren gainean xaguaren eskuineko botoia sakatuz kontrolatzailea ezabatu. 
+3. Joan Silabs etxeko orrialdera eta instalatu CP210x Universal Windows Driver jaitsi, deskonprimatu eta silabser.inf artxiboaren gainen eskuineko botoiarekin klik egin eta Instalatu.
 
 ### WiFi konexiorik ez
 1. Egiaztatu SSID eta pasahitza zuzenak direla
@@ -304,10 +305,12 @@ void loop() {
 
 ## Lizentzia
 
-MIT License - ikusi [LICENSE](LICENSE) fitxategia.
+[![CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
+
+Lan hau [Creative Commons Aitortu 4.0 Nazioarteko](https://creativecommons.org/licenses/by/4.0/) lizentziapean dago.
 
 ## Egilea
 
-Plataforma: PlatformIO
-Framework: Arduino
-Plataforma IoT: ThingsBoard
+Aitor Otaño
+Aitor Azpiroz
+TKNIKA
