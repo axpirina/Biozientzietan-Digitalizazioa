@@ -8,9 +8,9 @@ ESP8266 NodeMCU eta DHT11 sensorea erabiliz ThingsBoard-era tenperatura, hezetas
 
 ## 1. Magnituteak. Hauek dira gure gailuak neurtuko dituen magnituteak.
 
-- **Tenperatura**: DHT11 sentsorea (0-50°C, ±2°C zehaztasuna)
-- **Hezetasuna**: DHT11 sentsorea (20-90% RH, ±5% zehaztasuna)
-- **Intza puntua**: DHT11 sentsorea (0-50°C, ±2°C zehaztasuna)
+- **Tenperatura**: 0-50°C, ±2°C zehaztasuna
+- **Hezetasuna**: 20-90% RH, ±5% zehaztasuna
+- **Intza puntua**: 0-50°C, ±2°C zehaztasuna
 
 - **Laginketa Maiztasuna**: Laginketa maiztasuna 2s takoa izango da.
 
