@@ -261,7 +261,7 @@ void loop() {
 ## 6. Dashboarda - Denbora Errealeko Datuak
 
 <p align="center">
-  <img src="Dokumentuak/Irudiak/Dashboard.png" width="600"><br>
+  <img src="Dokumentuak/Irudiak/Dashboard.png" width="900"><br>
   <a href="https://eu.thingsboard.cloud/dashboard/b4a992a0-398d-11f1-ba44-c54ab1d7f1f4?publicId=ebbac470-3d80-11f1-92f7-cbbd42e0f134">Ikusi Dashboard-a</a>
 </p>
 
