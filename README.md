@@ -98,7 +98,7 @@ By Axpi (adapted)
 // WiFi eta MQTT konfigurazioa
 const char* ssid = "yourWiFiSSID";       // Zure WiFi izena
 const char* password = "yourWiFiPassword"; // Zure WiFi pasahitza
-const char* mqtt_server = "demo.thingsboard.io";
+const char* mqtt_server = "eu.thingsboard.cloud";
 
 // ThingsBoard tokena
 const char* mqtt_user = "yourDeviceToken";  
