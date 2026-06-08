@@ -22,7 +22,7 @@ ESP8266 NodeMCU eta DHT11 sensorea erabiliz ThingsBoard-era tenperatura, hezetas
 <img src="Dokumentuak/Irudiak/Nodemcu-DHT11-%20Sketch_bb.png" width="50%">
 </p>
 
-### Fritzing Eskemak Deskargatzeko
+### Fritzing Elementuak Deskargatzeko
 
 | Osagaia | Irudia | Fitxategia |
 |---------|--------|------------|
