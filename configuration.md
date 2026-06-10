@@ -10,7 +10,6 @@
 - Aginduak: `pio run`, `pio run --target upload`, `pio device monitor`.
 
 ## Sekretuen politika
+- Include karpetaren barruan secret.h artxibo batean gorde erabiltzaile eta pasahitz guztiak.
 - Ez irakurri, ez erakutsi, ez log-ean inprimatu `include/secrets.h`-ren edukia.
 - Fitxategi honek WiFi kredentzialak eta ThingsBoard access token-a ditu.
-- `.gitignore:6`-n dago jada, baina agenteek ez dute eduki hori irakurri behar.
-- Eredua: `include/secrets.h.example` erabili beti erreferentzia gisa.
