@@ -13,3 +13,4 @@
 - Include karpetaren barruan secret.h artxibo batean gorde erabiltzaile eta pasahitz guztiak.
 - Ez irakurri, ez erakutsi, ez log-ean inprimatu `include/secrets.h`-ren edukia.
 - Fitxategi honek WiFi kredentzialak eta ThingsBoard access token-a ditu.
+- Github-era igoaz gero gitignorean gehitu. 
