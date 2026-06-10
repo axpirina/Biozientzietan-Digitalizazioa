@@ -45,3 +45,7 @@ pio device monitor        # serial monitor (115200 baud)
 
 - Recommended extension: `platformio.platformio-ide`
 - Unwanted: `ms-vscode.cpptools-extension-pack`
+
+## CONFIGURATION
+
+- Always folllow configuration.md file guideline.
