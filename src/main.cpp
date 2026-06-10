@@ -56,8 +56,8 @@ const float longitude[] = {
 void setup() {
   Serial.begin(115200);
   dht.begin();
-  
   Serial.println("WiFi konektatzen...");
+  WiFi.mode(WIFI_STA);
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
