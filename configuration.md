@@ -6,6 +6,7 @@
 - Beti 115200 baud erabili.
 
 ## Eraikitze sistema
+- MQTT APIa erabili beti komunikazio modu bezala.
 - PlatformIO (npm/Node.js ez dago). Ez exekutatu `npm` script-ik inoiz.
 - Aginduak: `pio run`, `pio run --target upload`, `pio device monitor`.
 
