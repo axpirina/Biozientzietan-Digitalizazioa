@@ -30,9 +30,6 @@ pio device monitor        # serial monitor (115200 baud)
 
 - `src/main.cpp` is the real firmware (not the example in README).
 - Publishes temperature/humidity/heatIndex every ~2s to ThingsBoard via MQTT.
-- Cycles through 17 hardcoded Basque town coordinates every 10s.
-- The whole repo is deployed to GitHub Pages on push to `main` (`.github/workflows/pages.yml`).
-- No build or test CI exists.
 - `index.html` and `include/dashboard.html` embed a ThingsBoard public dashboard.
 
 ## MQTT
