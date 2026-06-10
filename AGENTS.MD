@@ -60,3 +60,13 @@ pio device monitor        # serial monitor (115200 baud)
 ## Kodeketa-estiloa
 - Aldagaiak ingelesez
 - Komentarioak euskaraz
+
+## ESP8266 kodetzea
+- Hobe ESP8266 bakoitzak ID bakarra izatea:
+
+  String clientId = "ESP8266-" + String(ESP.getChipId(), HEX);
+  mqtt.connect(clientId.c_str(), MQTT_USERNAME, NULL);
+
+- ESP8266-a soilik station moduan jarri eta ez utzi AP modurik aktibatzen.
+WiFi.mode(WIFI_STA);
+
