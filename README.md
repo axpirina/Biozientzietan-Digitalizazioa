@@ -311,6 +311,7 @@ Lan hau [Creative Commons Aitortu 4.0 Nazioarteko](https://creativecommons.org/l
 
 ## Egilea
 
-Aitor Otaño eta
-Aitor Azpiroz.
+Aitor Otaño,
+Aitor Azpiroz eta
+Jon Azpiroz.
 TKNIKA
